@@ -52,5 +52,15 @@ namespace Web_Browser
         {
             searchBar.Text = webBrowser.Source.AbsoluteUri;
         }
+
+        private void forwardButton_Click(object sender, RoutedEventArgs e)
+        {
+            webBrowser.GoForward();
+        }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            webBrowser.GoBack();
+        }
     }
 }

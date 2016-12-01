@@ -13,8 +13,11 @@
         </Grid.RowDefinitions>
         <DockPanel Margin="0">
             <DockPanel FlowDirection="RightToLeft">
+                <Button x:Name="forwardButton" Content="Forward" Height="22" VerticalAlignment="Top" MinWidth="50" MaxWidth="52" Click="forwardButton_Click"/>
+                <Button x:Name="backButton" Content="Back" Height="22" VerticalAlignment="Top" MinWidth="50" MaxWidth="50" Click="backButton_Click"/>                
                 <Button x:Name="goButton" Content="Go" Height="22" VerticalAlignment="Top" Width="75" MaxWidth="50" MinHeight="0" Click="goButton_Click" IsDefault="True"/>
                 <TextBox x:Name="searchBar" TextWrapping="Wrap" Text="http://www.google.com" FlowDirection="LeftToRight" TextChanged="searchBar_TextChanged_1"/>
+                
             </DockPanel>
         </DockPanel>
         <WebBrowser x:Name="webBrowser" Margin="0" Grid.Row="1" LoadCompleted="webBrowser_LoadCompleted"/>
